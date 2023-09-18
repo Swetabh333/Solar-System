@@ -28,7 +28,7 @@ class Planet:
 
         F = self.G * planet.mass * self.mass / distance **2
 
-        angle = math.atan2(distance_y,distance_x)
+        angle = np.arctan2(distance_y,distance_x)
 
         F_x = math.cos(angle) * F
         F_y = math.sin(angle) * F
